@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top_half">
+        <span id="city">Houston, TX</span>
+        <img id="icon" src="sample.png" alt="">
+        <span id="temp">100&deg;</span>
+    </div>
+    <div id="bars">
+        <div id="humidity-bar" class="bar_back">
+            <div id="humidity-label" class="bar_label">
+                <span id="humidity-label">HUMIDITY - </span>
+                <span id="humidity">60</span>
+                <span id="humidity-units">%</span>
+            </div>
+            <div id="humidity-fill" class="fill"></div>
+        </div>
+        <div id="UV-bar" class="bar_back">
+            <div id="UV-label" class="bar_label">
+                <span id="UV-label-text">UV INDEX - </span>
+                <span id="UV">9</span>
+            </div>
+            <div id="UV-fill" class="fill"></div>
+        </div>
+        <div id="wind-bar" class="bar_back">
+            <div id="wind-label" class="bar_label">
+                <span id="wind-label-text">WIND - </span>
+                <span id="wind_direction">S -</span>
+                <span id="wind_speed">9</span>
+                <span id="wind_units">mph</span>
+            </div>
+            <div id="wind-fill" class="fill"></div>
+        </div>
+    </div>
+    <div id="inputs">
+        <input type="text" id="zip-input" placeholder="ZIP">
+        <button id="units">&deg;F</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

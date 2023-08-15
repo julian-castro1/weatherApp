@@ -1,0 +1,126 @@
+body{
+    box-sizing: border-box;
+    background-color: #252525;
+    font-family: 'roboto', sans-serif;
+    color: rgb(213, 213, 213);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 20px;
+}
+#top_half{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#city{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+img{
+    width: 60%;
+}
+#temp{
+    font-size: 6rem;
+    font-weight: 500;
+    margin: 0;
+}
+#bars{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 12px;
+}
+.bar_back{
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(213, 213, 213);
+}
+#humidity-bar{
+    position: relative;
+    border-color: rgb(89, 154, 228);
+}
+#UV-bar{
+    position: relative;
+    border-color: rgb(228, 105, 89);
+}
+#wind-bar{
+    position: relative;
+    border-color: rgb(82, 161, 66);
+}
+.bar_label{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    z-index: 2;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+.fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 15px;
+    height: 21px;
+}
+#humidity-fill{
+    background-color: rgb(89, 154, 228);
+    width: 64%;
+}
+#UV-fill{
+    background-color: rgb(228, 105, 89);
+    width: 64%;
+}
+#wind-fill{
+    background-color: rgb(82, 161, 66);
+    width: 64%;
+}
+#inputs{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 70px;
+}
+input, button{
+    font-family: 'roboto', 'sans-serif';
+    border-radius: 30px;
+    width: 50%;
+    border: 0;
+    background-color: rgb(44, 44, 44);
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+input::placeholder{
+    color: rgb(34, 34, 34);
+}
+input:focus, button:focus{
+    outline: none;
+}
+button{
+    width: 30%;
+}
+input:hover, button:hover{
+    cursor: pointer;
+}
